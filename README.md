@@ -15,3 +15,6 @@
 
 >4.
 >To run the api use ```forever start app.js``` after done this you can use your shortener
+
+### Contact for help
+>Discord => ```Tiegertropfen119#0001```
