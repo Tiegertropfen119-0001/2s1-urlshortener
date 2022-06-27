@@ -2,10 +2,10 @@
 -- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Erstellungszeit: 26. Jun 2022 um 16:22
--- Server-Version: 10.3.34-MariaDB-0ubuntu0.20.04.1
--- PHP-Version: 7.4.22
+-- Host: mariadb
+-- Erstellungszeit: 27. Jun 2022 um 12:30
+-- Server-Version: 10.6.5-MariaDB-1:10.6.5+maria~focal
+-- PHP-Version: 7.4.20
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,17 +28,18 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `urls` (
-  `ID` mediumint(9) NOT NULL,
+  `ID` bigint(20) NOT NULL,
   `clearurl` mediumtext NOT NULL,
-  `shortid` mediumtext NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `shortid` mediumtext NOT NULL,
+  `clicks` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Daten für Tabelle `urls`
 --
 
-INSERT INTO `urls` (`ID`, `clearurl`, `shortid`) VALUES
-(1, 'https://0url.xyz/', 'credits');
+INSERT INTO `urls` (`ID`, `clearurl`, `shortid`, `clicks`) VALUES
+(1, 'https://0url.xyz/', 'credits', 0);
 
 --
 -- Indizes der exportierten Tabellen
@@ -58,7 +59,7 @@ ALTER TABLE `urls`
 -- AUTO_INCREMENT für Tabelle `urls`
 --
 ALTER TABLE `urls`
-  MODIFY `ID` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
