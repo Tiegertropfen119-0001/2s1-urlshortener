@@ -2,7 +2,7 @@
 ![alt text](https://xamplex.de/s/7pmfkffy7a4adbfl6qzaowxbz.png)
 ### How to install
 >1.
->Copy the files (style.css , index.html , createurl.php , Folder r)
+>Copy the files (style.css , index.html , createurl.php , showclicks.php , showclicks.index Folder r)
 
 >In your web directory
 
