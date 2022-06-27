@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mariadb
--- Erstellungszeit: 27. Jun 2022 um 12:30
+-- Erstellungszeit: 27. Jun 2022 um 12:37
 -- Server-Version: 10.6.5-MariaDB-1:10.6.5+maria~focal
 -- PHP-Version: 7.4.20
 
@@ -31,7 +31,7 @@ CREATE TABLE `urls` (
   `ID` bigint(20) NOT NULL,
   `clearurl` mediumtext NOT NULL,
   `shortid` mediumtext NOT NULL,
-  `clicks` int(11) NOT NULL
+  `clicks` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -59,7 +59,7 @@ ALTER TABLE `urls`
 -- AUTO_INCREMENT für Tabelle `urls`
 --
 ALTER TABLE `urls`
-  MODIFY `ID` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ID` bigint(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
