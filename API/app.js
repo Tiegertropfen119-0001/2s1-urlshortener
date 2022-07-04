@@ -196,7 +196,6 @@ console.log(urlid)
 
 app.listen(CONFIG.baPort,()=>{
     console.log(`Server started on port: ${CONFIG.baPort}`);
-
 });
 
 
