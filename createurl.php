@@ -28,13 +28,5 @@ echo $result;
 echo '</h1></center>';
 echo '</div>';
 echo '</html>';
-
-
-
-
 exit();
-
-
-
-
 ?>
