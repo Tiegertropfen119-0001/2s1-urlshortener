@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>0url</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="background-color: rgb(30,30,30);">
+
+    <div class="name">
+<center><h1>Welcome on 0url.xyz</h1></center>
+</div>
+<div class="name2">
+<center><h2>Your url shortener</h2></center>
+</div>
+
+<form name="creurl" action="createurl.php" method="post" onsubmit="required()">
+<div class="urlinput">
+    <center><input type="text" id="lname" name="lname" value="" placeholder="Enter Url..."><br><br></center>
+</div>
+<div class="button">
+      <center><input type="submit" value="Create Url"></center>
+</div>
+<br></br>
+<br></br>
+
+</form>
+<form name="showclick"  action="https://0url.xyz/showclicks.html">
+
+<div class="button">
+      <center><input type="submit" value="Show Clicks"></center>
+</div>
+
+</form>
+<script>
+function required()
+{
+var empt = document.forms["creurl"]["lname"].value;
+if (empt == "Enter url...")
+{
+alert("Error you can't short > Enter url... < ");
+window.location.href = 'https://0url.xyz';
+return false;
+}
+else
+{
+
+return true;
+}
+}
+</script>
+
+
+<div class="sclass">
+<br></br>
+<br></br>
+<br></br>
+  <style>
+
+</style>
+<a><center>ShareX Support</center></a>
+<a><center>You can add 0url.xyz as coustom url shortener</center></a>
+<a><center>Open Api Json code :
+<br>{"shortthisurl" : "$input$",
+</br>"instanturl" : "on"}</br>
+</center></a>
+<div class="dbutton">
+  <br></br>
+  <form action="https://github.com/Tiegertropfen119-0001/0url-urlshortener">
+      <center><input type="submit" value="Download preset"></center>
+      </form>
+</div>
+</div>
+
+
+<footer>
+  <form action="https://github.com/Tiegertropfen119-0001/0url-urlshortener" >
+      <center><input type="submit" class="imp" value="GitHub"></center>
+      </form>
+
+
+</footer>
+
+  </body>
+</html>
