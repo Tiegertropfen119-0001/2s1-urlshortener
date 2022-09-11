@@ -19,4 +19,4 @@
 >To run the api use ```pm2 start app.js --name UrlShort --cron-restart="0 0 * * *"``` after done this you can use your shortener 
 
 ### Contact for help
->Discord => ```Tiegertropfen119#0001```
+>Discord => ```Tiegertropfen119#4537```
