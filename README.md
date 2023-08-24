@@ -1,6 +1,4 @@
-# 0url-webshortener | The shortener from [0url.xyz](https://0url.xyz/)
-![alt text](https://xamplex.de/s/7pmfkffy7a4adbfl6qzaowxbz.png)
-![alt](https://xamplex.de/s/h35hth7kdl2ypjt6fhh7b03s0.png)
+# 2s1-webshortener | The shortener from [2s1.xyz](https://2s1.xyz/)
 ### How to install
 >1.
 >Copy the files (style.css , index.html , createurl.php , showclicks.php , showclicks.index Folder r)
